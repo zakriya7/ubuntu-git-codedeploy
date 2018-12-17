@@ -1,0 +1,12 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /home/nodejs
+hooks:
+  BeforeInstall:
+    - location: mongo_install.sh
+      runas: root
+  AfterInstall:
+    - location: after_install_script.sh
+      runas: root	
