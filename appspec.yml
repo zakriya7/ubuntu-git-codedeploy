@@ -5,7 +5,7 @@ files:
     destination: /home/nodejs
 hooks:
   BeforeInstall:
-    - location: mongo_install.sh
+    - location: public/install_dependencies
       runas: root
   AfterInstall:
     - location: after_install_script.sh
