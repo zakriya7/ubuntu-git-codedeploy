@@ -4,9 +4,9 @@ files:
   - source: /
     destination: /home/nodejs
 hooks:
-  BeforeInstall:
+  AfterInstall:
     - location: scripts/mongo_install.sh
       runas: root
-  AfterInstall:
+  ApplicationStart:
     - location: after_install_script.sh
-      runas: root	
+      runas: root
