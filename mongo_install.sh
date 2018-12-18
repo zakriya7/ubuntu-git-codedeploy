@@ -1,4 +1,4 @@
 #!bin/bash
-cd /home/nodejs
+cd /tmp/nodejs
 apt update
 apt install -y mongodb
