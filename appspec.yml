@@ -3,7 +3,7 @@ os: linux
 files:
   - source: /
     destination: /home/nodejs
-  - source: /monodb-enterprise.repo
+  - source: /mongodb-enterprise.repo
     destination: /etc/yum.repos.d
 hooks:
   AfterInstall:
