@@ -1,5 +1,6 @@
 #!bin/bash
 cd /home/nodejs
-yum install epel-release
-yum -y install nodejs npm
+apt install curl
+curl -sL https://deb.nodesource.com/setup_10.x | sudo bash -
+apt install nodejs
 npm start
