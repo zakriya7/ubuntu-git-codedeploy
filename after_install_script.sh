@@ -1,3 +1,3 @@
 #!bin/bash
-cd /home/nodejs
+cd /tmp/nodejs
 npm start
