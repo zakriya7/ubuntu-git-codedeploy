@@ -5,5 +5,5 @@ files:
     destination: /home/nodejs
 hooks:
   ApplicationStart:
-    - location: after_install_script.sh
+    - location: ./after_install_script.sh
       runas: root
