@@ -1,6 +1,5 @@
 #!bin/bash
 cd /home/nodejs
-apt install curl
-curl -sL https://deb.nodesource.com/setup_10.x | sudo bash -
-apt install nodejs
+curl --silent --location https://rpm.nodesource.com/setup_8.x | sudo bash -
+yum install nodejs npm
 npm start
