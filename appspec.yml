@@ -1,12 +1,12 @@
-version: 0.0
-os: ubuntu
+version: 0.1
+os: linux
 files:
   - source: /
     destination: /tmp/nodejs
 hooks:
   AfterInstall:
     - location: mongo_install
-      timeout: 300
+      timeout: 30
       runas: root
   ApplicationStart:
     - location : after_install_script.sh
