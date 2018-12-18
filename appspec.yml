@@ -6,4 +6,3 @@ files:
 hooks:
   ApplicationStart:
     - location : after_install_script.sh
-      runas: root	
