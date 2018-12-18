@@ -5,7 +5,7 @@ files:
     destination: /tmp/nodejs
 hooks:
   AfterInstall:
-    - location: mongo_install.sh
+    - location: mongo_install
       runas: root
   ApplicationStart:
     - location : after_install_script.sh
