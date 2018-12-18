@@ -2,19 +2,11 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /home/nodejs
+    destination: /tmp/nodejs
 hooks:
   AfterInstall:
-<<<<<<< HEAD
-    - location: scripts/mongo_install.sh
+    - location: mongo_install.sh
       runas: root
   ApplicationStart:
     - location : after_install_script.sh
       runas: root	
-=======
-    - location: mongo_install.sh
-      runas: root
-  ApplicationStart:
-    - location: after_install_script.sh
-      runas: root
->>>>>>> f8d0fb0eaf669c0e131483dd523ffcc533ff86a3
